@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,
+        ol,
+        li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            width: 100%;
+            height: 170px;
+            margin: 0 auto;
+        }
+
+        #box {
+            width: 100%;
+            height: 30px;
+            margin: 0 auto;
+            background-color: black;
+            text-align: center;
+        }
+
+        #box>.eventbox {
+            margin: 5px 0 20px 0px;
+            padding: 6px 0 0 0px;
+        }
+
+        #box>.eventbox>p {
+            color: #fff;
+            font-size: 12px;
+        }
+
+        span {
+            color: yellow;
+        }
+
+        #box>.eventbox>p>a {
+            color: #fff;
+        }
+
+        #logo {
+            width: 200px;
+            height: 30px;
+            margin: 20px auto;
+        }
+
+        #logo>img {
+            width: 190;
+            height: 25px;
+            margin: 0px 0 0 32px;
+        }
+
+        #login {
+            width: 400px;
+            height: 20px;
+            float: right;
+            margin: -50px 10px 10px 0px;
+        }
+        
+        #login>ul>li {
+            float: left;
+            padding: 0px 0 0 25px;
+        }
+
+        #login>ul>li>a {
+            text-decoration: none;
+            color: #000;
+            font-style: "돋움";
+            font-size: 13px;
+        }
+
+        #login>ul>li>a>img {
+            width: 25px;
+            height: 25px;
+        }
+
+        nav {
+            width: 100%;
+            height: 70px;
+            margin: 0px 0 120px 0px;
+            background-color: #131635
+        }
+
+        nav>ul {
+            width: 1600px;
+            height: 70px;
+            margin: 0 auto;
+        }
+
+        nav>ul>li {
+            float: left;
+            color: #fff;
+            margin: 26px 16px 0 53px;
+            font-size: 14px;
+        }
+
+        nav>ul>li>a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+
+
+        #slider {
+            width: 1200px;
+            height: 700px;
+            margin: 0 auto;;
+        }
+
+        #slider>img {
+            width: 100%;
+            height: 700px;
+        }
+
+        section {
+            width: 1200px;
+            height: 4716px;
+            margin: 0 auto;
+        }
+
+        #bestproduct {
+            width: 1200px;
+            height: 622px;
+            margin: 0 auto;
+        }
+
+        #bestproduct > h1 { text-align:center; padding:30px 0 0 0px;} 
+        #bestproduct > ul { width:400px; height:50px; text-align:center; margin:0 auto;}
+        #bestproduct > ul > li { float:left; padding: 20px 18px 0px 60px; font-weight:bold;}
+        #bestproduct > ul > li > span { color:gray;}
+
+        #bestproduct>.bestproduc {
+            width: 260px;
+            height: 400px;
+            margin: 50px 0 0 30px;
+            float: left;
+        }
+
+        .bestproduc > a > img { width:260px; height:290px;}
+        .bestproduc > h5 > a { font-size:12px; padding: 5px 0 0 5px; text-decoration:none; color:#000;}
+        .bestproduc > p { font-size:12px; padding:10px 0 0 5px; }
+        .bestproduc > p > span { text-decoration:line-through; color:gray; font-size: 11px;}
+        .bestproduc > p:before {content:"10% "; color:red;}
+
+        #championnow {
+            width: 1200px;
+            height: 1084px;
+            margin: 0 auto;
+        }
+
+        #championnow > h1 { text-align:center; padding: 90px 0 0 0px;}
+
+        #championnow > a >img {
+            width: 550px;
+            height: 360px;
+            margin: 70px 0 0 30px;
+            float: left;
+        }
+
+        .nowproduct {
+            width: 260px;
+            height: 360px;
+            margin: 70px 0 0 30px;
+            float: left;
+        }
+
+        .nowproduct > a > img { width:260px; height:290px; }
+
+        .nowproduct > a > img { width:260px; height:290px;}
+        .nowproduct > h5 > a { font-size:12px; padding: 5px 0 0 5px; text-decoration:none; color:#000;}
+        .nowproduct > p { font-size:12px; padding:10px 0 0 5px; }
+        .nowproduct > p > span { text-decoration:line-through; color:gray; font-size: 11px;}
+        .nowproduct > p:before {content:"10% "; color:red;}
+
+
+        #mdspick {
+            width: 1200px;
+            height: 1284px;
+            margin: 0 auto;
+        }
+
+        #mdspick {text-align:center;}
+
+        #mdspick > .button1 { width: 200px; height:50px; border:1px solid #000; font-weight:bold; text-align:center; font-size:15px; margin: 25px 0 0 0px;}
+
+        #mdspick > .button1:hover { cursor:pointer;}
+        #mdspick > .button2:hover { cursor:pointer;}
+
+        #mdspick > .button2 { width: 200px; height:50px; border:1px solid #000; font-weight:bold; text-align:center; font-size:15px; margin: 25px 0 0 400px;}
+
+        .pickimg {width:1200px; height:550px; margin:0 auto;
+        }
+
+        .pickimg > a > img {
+            width: 550px;
+            height: 550px;
+            float:left;
+            margin:20px 10px 20px 30px; 
+        }
+
+        #caphat {
+            width: 550px;
+            height: 550px;
+            margin: 0px 0 0 30px;
+            float: left;
+        }
+
+        .capbox {
+            width: 550px;
+            height: 180px;
+            margin: 10px auto 0px;
+        }
+        .capbox > a > img { width:100px; height:150px;float:left; margin: 15px 0 0 10px;}
+
+        .capbox > h5 > a { width:400px; height:30px; float:right; margin:70px 30px 0 0px; text-align:left; text-decoration:none; color:#000; padding: 0px 20px 0 0px;}
+        .capbox > p { width: 400px; height:20px; float:right;text-align:left; margin:0px 30px 0 0px;}
+
+
+        #backpack {
+            width: 550px;
+            height: 550px;
+            margin: 0px 30px 0 0px;
+            float: right;
+        }
+
+        .backpackbox {
+            width: 550px;
+            height: 180px;
+            margin: 10px 0 auto;
+        }
+
+        .backpackbox > a > img { width:100px; height:150px;float:left; margin: 15px 0 0 10px;}
+
+        .backpackbox > h5 > a { width:400px; height:30px; float:right; margin:70px 30px 0 0px;; text-align:left; text-decoration:none; color:#000; padding: 0px 20px 0 0px;}
+        .backpackbox > p { width: 400px; height:20px; float:right;text-align:left; margin:0px 30px 0 0px;}
+        .backpackbox > p:before {content:"10% "; color:red;}
+        .backpackbox > p > span { text-decoration:line-through; color:gray; font-size: 15px;}
+
+        #lookbook {
+            width: 1200px;
+            height: 702px;
+            margin: 0 auto;
+            background-image: url(https://mblogthumb-phinf.pstatic.net/MjAyMjA3MzBfMTEg/MDAxNjU5MTI5MjI1NjA0.csGP1IKw7cxPTgnjx3CjE286xT9lN2bi_2HsuavMB0Ag.lBu3lPn1RobKL1eZ5CbgR7_bF77IE24O5e4-ymVBBJsg.JPEG.sess09/NaverBlog_20220730_061345_08.jpg?type=w2);
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-image:(0.5);}
+
+        #lookbook>ul>li>a>img {
+            width: 300px;
+            height: 300px;
+            float: left;
+            margin: 90px 0px 0 75px;
+        }
+        #lookbook > h1 { text-align:center; width: 1000px; height:50px; margin: 0px 0 0 100px; padding:50px 0 0 0px;}
+        #lookbook > h2 { text-align:center; width: 1000px; height:30px; margin: 0px 0 0 100px; padding:40px 0 0 0px;}
+        #lookbook > button { width:200px; height:50px; border:1px solid #fff; margin:80px 0 0 500px;background-color:transparent;}
+        #lookbook > button:hover { cursor:pointer; border:1px solid #fff; background-color:#fff; color:#000}
+
+        #instagram {
+            width: 1200px;
+            height: 472px;
+            margin: 0 auto;
+        }
+        #instagram > ul > li > a > img { width:250px; height:250px; float:left; margin: 50px 0px 0 40px;}
+        #instagram > h1 { width:1000px; height:50px; text-align:center; margin:0px 0 0 100px; padding:80px 0 0 0px}
+        #instagram > p { width:1000px; height:20px; color:gray; text-align:center; margin:0px 0 0 100px; padding:40px 0 0 0px}
+
+        #styling {
+            width: 1200px;
+            height: 552px;
+            margin: 0 auto;
+        }
+
+        #styling > h1 { text-align:center; padding: 80px 0 0 0px;}
+
+        #styling>.stylingbox {
+            Width: 250px;
+            height: 320px;
+            margin: 30px 0 0 38px;
+            float: left;
+            border: 1px solid gray;
+        }         
+
+        #styling>.stylingbox>.top {
+            font-size: 11px;
+            margin: 0px 5px 10px 50px;
+            padding: 5px 0 0 5px;
+        }
+
+        #styling>.stylingbox>img {
+            width: 30px;
+            height: 40px;
+            float: left;
+            margin: 3px 0 0 6px;
+        }
+
+        #styling>.stylingbox>.under {
+            font-size: 11px;
+            font-weight: bold;
+            padding: 0px 0 5px 10px;
+            margin: -6px 0 0 45px;
+        }
+
+        #styling>.stylingbox>.inbox {
+            width: 250px;
+            height: 270px;
+            border: 1px solid gray;
+        }
+
+        #styling>.stylingbox>.inbox > a >img {
+            width: 250px;
+            height: 220px;
+        }
+
+        #styling>.stylingbox>.inbox>p {
+            font-size: 12px;
+            margin: -1px 0 0 5px;
+            padding: 5px 0 0 0px;
+        }
+
+        #styling>.stylingbox>.inbox>span {
+            font-size: 11px;
+            color:gray;
+        }
+
+        footer {
+            width: 100%;
+            height: 300px;
+            margin: 0 auto;
+            background-color: #282828;}
+
+        footer > #mainbox { width:1200px; height:275px; margin:0 auto;}
+
+        footer > #mainbox > .box1 {
+            width: 650px;
+            height: 275px;
+            float: left;
+            margin: 10px;
+        } 
+
+        #mainbox > .box1 > .w1 > ul { width:500px; height:20px; margin: 30px 0px 0 0;}
+        #mainbox > .box1 > .w1 > ul > li { float:left; margin: 0 30px 0 0;}
+        #mainbox > .box1 > .w1 > ul > li > a {  color:#fff; text-decoration:none; font-size:12px;}
+        .box1 > .w2 {width:600px; height:80px;display:block; margin:20px 0 0 0;}
+        #mainbox > .box1 > .w2 > p { width:600px; height:60px; float:left; color:gray; font-size:11px;}
+        #mainbox > .box1 > .w2 > span { float:left; color:gray; font-size:12px;}
+        #mainbox > .box1 > .w3 > ul { width:550px; height:20px; margin: 20px 0 0 0;}
+        #mainbox > .box1 > .w3 > ul > li { float:left; margin:0 30px 0 0;}
+        #mainbox > .box1 > .w3 > ul > li > a {  color:#fff; text-decoration:none; font-size:12px;}
+        .w3 > button { float:right; margin:-19px 5px 0 0; font-size: 7px; color:#fff;background-color:#000; border-radius:5px;} 
+        
+
+        footer > #mainbox > .box2 {
+            width: 350px;
+            height: 275px;
+            float: right;
+            margin: 10px;
+        }
+        .box2 > .imgbox { width:300px; height:30px; margin:30px 0 0 0px; float:right;}
+        .imgbox > ul > li > a >img { width:20px; height:20px; float:right; margin: 0px 0px 0 20px ;}
+
+        .box2 > h3 {color:#fff; float:left; width:100px;height:20px; margin:0px 0px 0 130px; }
+
+        .box2 > a > p {color:#fff; float:right; width:100px;height:20px; margin:0px 0px 0 0;  text-decoration:none; font-size:17px;}
+
+        .box2 > span { float:right; color:#fff; font-size:11px; text-align:right; margin: 20px 0 0 0px; line-height: 20px;}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="box">
+            <div class="eventbox">
+                <p>Only 3 Day <span> UP TO 61% </span><a href="#">바로가기</a></p>
+            </div>
+        </div>
+        <div id="logo">
+            <img src="https://file.namu.moe/file/c06525893120a143da1291449ee9d8d056d366e894bf7d48f3b18ced6b1fa415" alt="챔피온 로고">
+        </div>
+        <div id="login">
+            <ul>
+                <li><a href="#">로그인</a>
+                </li>
+                <li><a href="#">회원가입</a>
+                </li>
+                <li><a href="#">주문조회</a>
+                </li>
+                <li><a href="#"><img src="https://cdn3.iconfinder.com/data/icons/feather-5/24/search-64.png"
+                            alt="돋보기 아이콘"></a>
+                </li>
+                <li><a href="#"><img src="https://cdn3.iconfinder.com/data/icons/feather-5/24/shopping-cart-64.png"
+                            alt="장바구니 아이콘"></a>
+                </li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">NEW</a>
+                </li>
+                <li><a href="#">TOP</a>
+                </li>
+                <li><a href="#">BOTTOM</a>
+                </li>
+                <li><a href="#">WOMEN'S</a>
+                </li>
+                <li><a href="#">KIDS</a>
+                </li>
+                <li><a href="#">FOOTWEAR</a>
+                </li>
+                <li><a href="#">ACC</a>
+                </li>
+                <li><a href="#">GOLF</a>
+                </li>
+                <li>/
+                </li>
+                <li><a href="#">SALE</a>
+                </li>
+                <li><a href="#">HERITAGE</a>
+                </li>
+                <li><a href="#">LINE</a>
+                </li>
+                <li>/
+                </li>
+                <li><a href="#">BRAND</a>
+                </li>
+                <li><a href="#">PROMOTION</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <div id="slider">
+        <img src="https://i.ytimg.com/vi/bHC8xWEvabU/maxresdefault.jpg" alt="챔피온광고이미지">
+    </div>
+
+    <section>
+        <div id="bestproduct">
+            <h1>BEST PRODUCT</h1>
+                <ul>
+                    <li><a href="#">top</a></li>
+                
+                    <li><span><a href="#">BOTTOM</a></span></li>
+                
+                    <li><span><a href="#">ACC</a></span></li>
+                    </ul>
+
+
+            <div class="bestproduc">
+                <a href="#"><img src="img/베스트1.jpg" alt=""
+                    onmouseover="this.src='img/beston1.jpg'"
+                    onmouseout="this.src='img/베스트1.jpg'"></a>
+                <h5><a href="#">[ASIA] Reverse Weave® 100 French Terry<br>그래픽 후드 스웨트 셔츠 (GREY)</a></h5>
+                <p>134,100원 <span>149,000원</span></p>
+            </div>
+
+            <div class="bestproduc">
+                <a href="#"><img src="img/베스트2.jpg" alt=""
+                    onmouseover="this.src='img/beston2.jpg'"
+                    onmouseout="this.src='img/베스트2.jpg'"></a>
+                <h5><a href="#">[US] 나일론 옥스포드 코치자켓 (BLACK)</a></h5>
+                <p>159,000원</p>
+            </div>
+
+            <div class="bestproduc">
+                <a href="#"><img src="img/베스트3.jpg" alt=""
+                    onmouseover="this.src='img/beston3.jpg'"
+                    onmouseout="this.src='img/베스트3.jpg'"></a>
+                <h5><a href="#">[ASIA] Reverse Weave® 094 Jersey<br>긴팔티셔츠 (NOMAL GREY)</a></h5>
+                <p>134,100원 <span>109,000원</span></p>
+            </div>
+
+            <div class="bestproduc">
+                <a href="#"><img src="img/베스트4.jpg" alt=""
+                    onmouseover="this.src='img/beston4.jpg'"
+                    onmouseout="this.src='img/베스트4.jpg'"></a>
+                <h5><a href="#">[US] 여성 Windsuit 풀집업 점퍼 (BLACK)</a>)</h5>
+                <p>134,100원 <span>129,000원</span></p>
+            </div>
+
+        </div>
+
+        <div id="championnow">
+            <h1>CHAMPION NOW</h1>
+            <a href="#"><img src="https://bbootxbranctory.diskn.com/champion/img/event2/230216_outer_promotion/list.jpg"
+                alt="23SS OUTER PROMOTION 이미지"></a>
+
+            <div class="nowproduct">
+                <a href="#"><img src="img/now1.jpg" alt=""
+                    onmouseover="this.src='img/nowon1.jpg'"
+                    onmouseout="this.src='img/now1.jpg'"></a>
+                <h5><a href="#">[US] Champion로고 풀집업 바람막이 (NAVY)</a></h5>
+                <p> 80,100원 <span>119,000원</span></p>
+            </div>
+
+            <div class="nowproduct">
+                <a href="#"><img src="img/now2.jpg" alt=""
+                    onmouseover="this.src='img/nowon2.jpg'"
+                    onmouseout="this.src='img/now2.jpg'"></a>
+                <h5><a href="#">[US] Champion로고 풀집업 바람막이 (BLACK)</a></h5>
+                <p> 80,100원 <span>119,000원</span></p>
+            </div>
+
+            <div class="nowproduct">
+                <a href="#"><img src="img/now3.jpg" alt=""
+                    onmouseover="this.src='img/nowon3.jpg'"
+                    onmouseout="this.src='img/now3.jpg'"></a>
+                <h5><a href="#">[US]Champion로고 패커블 아노락 (GREEN)</a></h5>
+                <p> 89,100원 <span>119,000원</span></p>
+            </div>
+
+            <div class="nowproduct">
+                <a href="#"><img src="img/now4.jpg" alt=""
+                    onmouseover="this.src='img/nowon4.jpg'"
+                    onmouseout="this.src='img/now4.jpg'"></a>
+                <h5><a href="#">[US] Champion로고 패커블 아노락 (BLACK)</a></h5>
+                <p> 89,100원 <span>119,000원</span></p>
+            </div>
+
+            <div class="nowproduct">
+                <a href="#"><img src="img/now5.jpg" alt=""
+                    onmouseover="this.src='img/nowon5.jpg'"
+                    onmouseout="this.src='img/now5.jpg'"></a>
+                <h5><a href="#">[US]Champion로고 Windsuit 아노락<br>(LAZULINE BLUE)</a></h5>
+                <p> 118,100원 <span>140,000원</span></p>
+            </div>
+
+            <div class="nowproduct">
+                <a href="#"><img src="img/now6.jpg" alt=""
+                    onmouseover="this.src='img/nowon6.jpg'"
+                    onmouseout="this.src='img/now6.jpg'"></a>
+                <h5><a href="#">[US]Champion로고 Windsuit 아노락<br>(BLACK)</a></h5>
+                <p> 118,100원 <span>140,000원</span></p>
+            </div>
+
+        </div>
+
+        <div id="mdspick">
+            <h1>MD'S PICK</h1>
+
+            <button class="button1">#CAP&HAT</button>
+            <button class="button2">#BACKPACK</button>
+
+            <div class="pickimg">
+                <a href="#"><img src="https://champitr6563.cdn-nhncommerce.com/data/display/58_imageNm.jpg"
+                alt="cap이미지"></a>
+                <a href="#"><img src="https://champitr6563.cdn-nhncommerce.com/data/display/60_imageNm.jpg"
+                alt="backpack이미지"></a>
+            </div>
+
+            <div id="caphat">
+
+
+                <div class="capbox">
+                    <a href="#"><img src="img/cap1.jpg" alt=""></a>
+
+                        <h5><a href="#">[US] 5패널 트러커 (WHITE)</a></h5>
+                    
+                    <p>59,000원</p>
+                </div>
+
+                <div class="capbox">
+                    <a href="#"><img src="img/cap2.jpg" alt=""></a>
+                    
+                        <h5><a href="#">
+                    [US] 가먼트워시 릴렉스드 C로소 캡 (BLACK)
+                    </a></h5>
+                <p>59,000원</p>
+                </div>
+
+                <div class="capbox">
+                    <a href="#"><img src="img/cap3.jpg" alt=""></a>
+
+                        <h5><a href="#">[US] 가먼드워시 릴렉스드 C+Champion 로코 캡 (BLUE)</a></h5>
+                    
+                    <p>59,000원</p>
+                </div>
+
+            </div>
+
+            <div id="backpack">
+                <div class="backpackbox">
+                    <a href="#"><img src="img/backpack1.PNG" alt=""></a>
+
+                        <h5><a href="#">[EU][친환경] Champion 스크립트 로고 백팩 (BLACK)</a></h5>
+                    
+                    <p> 71,100원 <span>79,000원</span></p>
+
+                </div>
+
+                <div class="backpackbox">
+                    <a href="#"><img src="img/backpack2.jpg" alt=""></a>
+
+                        <h5><a href="#">[EU] 스크림드 로고 라벨 백팩 (BEIGE)</a></h5>
+                    </a>
+                    <p> 89,100원 <span>99,000원</span></p>
+
+                </div>
+
+                <div class="backpackbox">
+                    <a href="#"><img src="img/backpack3.jpg" alt=""></a>
+
+                        <h5><a href="#">[EU] Champion 로고 더플백 (BLACK)</a></h5>
+                    
+                        <p> 71,100원 <span>79,000원</span></p>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div id="lookbook">
+            <h1>LOOK BOOK</h1>
+            <h2>23' S/S [ Hype Your Essential ]</h2>
+            <ul>
+                <li><a href="#"><img src="https://www.championkorea.com/data/board/upload/lookbook/t/deeb4291a699357f"
+                            alt="룩북이미지1"></a></li>
+                <li><a href="#"><img src="https://image.msscdn.net/mfile_s01/_lookbook/list63ec6cbd076d3?1675297800000"
+                            alt="룩북이미지2"></a></li>
+                <li><a href="#"><img src="https://m.championkorea.com/data/board/upload/lookbook/8d05db0408f76558"
+                            alt="룩북이미지3"></a></li>
+            </ul>
+            <button>MORE</button>
+        </div>
+
+        <div id="instagram">
+            <h1>INSTAGRAM</h1>
+            <p>@champion_korea</p>
+            <ul>
+                <li><a href="#"><img src="img/인스타1.jpg" alt="인스타이미지1"></a></li>
+                <li><a href="#"><img src="img/인스타2.jpg" alt="인스타이미지2"></a></li>
+                <li><a href="#"><img src="img/인스타3.jpg" alt="인스타이미지3"></a></li>
+                <li><a href="#"><img src="img/인스타4.jpg" alt="인스타이미자4"></a></li>
+            </ul>
+        </div>
+
+        <div id="styling">
+            <h1>STYLING</h1>
+            <div class="stylingbox">
+                <div class="inbox">
+                    <a href="#"><img
+                        src="https://assets6.cre.ma/p/championkorea-com/reviews/00/00/00/89/42/image1/portrait_a130344022dbab51.jpg"
+                        alt="라이트다운자켓후기이미지"></a>
+                    <p>가볍고 따뜻해서 데일리 아이템으로 너무...</p>
+                    <span>
+                        <pre>_hyehrm...                   2022.11.16</pre>
+                    </span>
+                </div>
+                <img
+                    src="https://champitr6563.cdn-nhncommerce.com/data/goods/22/10/41/1000006055/1000006055_detail_466.jpg"></a>
+                <p class="top">[ASIA] [한국별주] Champion 멀티 ...</p>
+                <p class="under">리뷰 34 평점 5.0</p>
+            </div>
+
+            <div class="stylingbox">
+                <div class="inbox">
+                    <a href="#"><img
+                        src="img/스타일링2.jpg"
+                        alt="라이트다운자켓후기이미지"></a>
+                    <p>가볍고 따뜻해서 데일리 아이템으로 좋았...</p>
+                    <span>
+                        <pre>dear_s...                   2022.11.16</pre>
+                    </span>
+                </div>
+                <img
+                    src="img/후기1.jpg">
+                <p class="top">[ASIA] [한국별주] Champion 멀티 ...</p>
+                <p class="under">리뷰 45 평점 4.9</p>
+            </div>
+
+            <div class="stylingbox">
+                <div class="inbox">
+                    <a href="#"><img
+                        src="img/스타일링4.jpg"
+                        alt="라이트다운자켓후기이미지"></a>
+                    <p>조금 일찍 봄 준비</p>
+                    <span>
+                        <pre>yooncarp                   2023.02.02</pre>
+                    </span>
+                </div>
+                <img
+                    src="img/후기2.jpg">
+                <p class="top">[US]] C로고 패커블 나일론 아노락 (D..</p>
+                <p class="under">리뷰 3 평점 5.0</p>
+            </div>
+            
+            <div class="stylingbox">
+                <div class="inbox">
+                    <a href="#"><img
+                        src="img/스타일링3.jpg"
+                        alt="라이트다운자켓후기이미지"></a>
+                    <p>-</p>
+                    <span>
+                        <pre>done_u...                   2023.02.02</pre>
+                    </span>
+                </div>
+                <img
+                    src="img/후기3.jpg">
+                <p class="top">[US]] C로고 패커블 나일론 아노락...</p>
+                <p class="under">리뷰 3 평점 5.0</p>
+            </div>
+
+            
+
+            
+        </div>
+
+
+    </section>
+
+    <footer>
+        <div id="mainbox">
+        <div class="box1">
+            <div class="w1">
+            <ul>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">매장안내</a></li>
+                <li><a href="#">자주 묻는 질문</a></li>
+                <li><a href="#">1:1문의</a></li>
+            </ul>
+        </div>
+
+        <div class="w2">
+            <p>사업자등록번호 : 211-87-87724 통신판매업신고번호 : 제 2010-서울강남-00066호 사업자 정보확인 ><br>
+                대표전화 : 02-6204-1111 (유료)팩스 : 031-360-0003<br>
+                서울특별시 강남구 언주로 870 주식회사 LF ㅣ (주)LF 대표이사 : 오규식, 김상균, Champion 사업부장 유효상</p>
+
+            <span>ⓒ2020 LF ALL RIGHTS RESERVED authorized by Hanesbrands lnc.</span>
+            </div>
+
+            <div class="w3">
+            <ul>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">읽기 쉬운 개인정보처리방침</a></li>
+                <li><a href="#">청소년보호정책</a></li>
+            </ul>
+            <button>KCP 안정구매서비스 기입 ></button>
+        </div>
+
+        </div>
+
+        <div class="box2">
+
+            <div class="imgbox">
+            <ul>
+            <li><a href="a"><img src="https://cdn2.iconfinder.com/data/icons/social-icons-grey/512/YOUTUBE-64.png" alt=""></a></li>
+            <li><a href="a"><img src="https://cdn2.iconfinder.com/data/icons/social-icons-grey/512/INSTAGRAM-64.png" alt=""></a></li>
+            <li>
+            <a href="a"><img src="https://cdn2.iconfinder.com/data/icons/social-icons-grey/512/FB-64.png" alt=""></a></li>
+            </ul>
+        </div>
+
+            <h3>CS CENTER</h3>
+            <a href="#">
+                <p>02-06-1111</p>
+            </a>
+        <span>AM 10시 ~ PM 5시 (OFF-TIME PM 1시 ~ PM 2시)<br>
+
+                            DAY OFF (SATURDAY, SUNDAY, HOLIDAY)<br>
+
+                                        E-MAIL : cs@bboot.co.kr</span>
+        </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
